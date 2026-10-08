@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<html>
+<head>
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            background: pink;
+            color: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        .profile {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .instagram {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: black;
+            color: red;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .instagram:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hi, I'm Harsh 👋</h1>
+
+    <p>Welcome to my personal website!</p>
+
+    <!-- Instagram Link -->
+    <a 
+        href="https://www.instagram.com/harshu_mathur_0003/"
+        target="_blank"
+        class="instagram">
+        📸 Follow me on Instagram
+    </a>
+<!-- give me some money for graphic card Section -->
+<section class="give me some money for graphic card">
+    <h2>give me some money for graphic card</h2>
+
+    <p>Pay using UPI</p>
+
+    <div class="upi-circle">
+        <strong>UPI ID:</strong>
+        <span id="upiId">7065853849@fam</span>
+        <button onclick="copyUPI()">Copy</button>
+    </div>
+
+    <a id="payButton"
+       href="upi://pay?pa=7065853849@fam&pn=harsh&cu=INR"
+       class="pay-btn">
+        💰 Pay Now
+    </a>
+
+    <p id="copyMessage"></p>
+</section>
+
+<style>
+.give me some money for graphic card {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    font-family: Arial, sans-serif;
+}
+
+.give me some money for graphic card h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.give me some money for graphic card p {
+    color: #666;
+}
+
+.upi-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+    margin: 20px 0;
+    background: #f3f3f3;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.upi-box button {
+    border: thik black border;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+.pay-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #111;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.pay-btn:hover {
+    transform: scale(1.05);
+}
+
+#copyMessage {
+    color: green;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function copyUPI() {
+    const upi = document.getElementById("upiId").innerText;
+
+    navigator.clipboard.writeText(upi);
+
+    document.getElementById("copyMessage").innerText =
+        "UPI ID copied!";
+}
+</script>
+<p>500 Rs. se jayada ki payment hi accepted hai!</p>
+<p>or kunal ka papa hu!</p>
